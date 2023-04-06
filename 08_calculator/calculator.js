@@ -15,9 +15,10 @@ const sum = function(...numbers) {
     let result=0;
   	for (let number of numbers)
       {
-       result +=number;
+       result +=Number(number);
       }
     console.log(result);
+    console.log(typeof result);
     return result;
 };
 
@@ -25,9 +26,10 @@ const multiply = function(...numbers) {
   let result=1;
   for (let number of numbers)
     {
-    result *=number;
+    result *=Number(number);
     }
   console.log(result);
+  console.log(typeof result);
   return result;
 };
 
@@ -56,8 +58,8 @@ const factorial = function(x)
 
 add(4,6);
 subtract(10,5);
-sum(0);
-multiply(2,4,6,8,10,12,14);
+sum(7,11);
+multiply(2,4);
 power(5,2);
 factorial(10);
 
